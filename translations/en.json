@@ -1,7 +1,12 @@
 {
   "app": {
     "description":  "Forbidden Keyword App",
-    "name":         "Forbidden Keyword App"
+    "name":         "Forbidden Keyword App",
+
+    "parameters": {
+      "label": "Keywords",
+      "helpText": "Keywords should be separated by commas (i.e keyword1,keyword2,keyword3)"
+    }
   },
 
   "forbidden_keywords_found": "One or more forbidden keywords are present in the ticket's comment (i.e <strong>{{keywords}}</strong>)"
