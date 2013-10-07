@@ -7,6 +7,10 @@
       "keywords": {
         "label": "Keywords",
         "helpText": "Keywords should be separated by commas (i.e keyword1,keyword2,keyword3)"
+      },
+      "disable_submit": {
+        "label": "Disable submit button?",
+        "helpText": "If checked, will disable the submit button as soon as a macth is found"
       }
     }
   },
