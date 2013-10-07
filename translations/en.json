@@ -4,8 +4,10 @@
     "name":         "Forbidden Keyword App",
 
     "parameters": {
-      "label": "Keywords",
-      "helpText": "Keywords should be separated by commas (i.e keyword1,keyword2,keyword3)"
+      "keywords": {
+        "label": "Keywords",
+        "helpText": "Keywords should be separated by commas (i.e keyword1,keyword2,keyword3)"
+      }
     }
   },
 
