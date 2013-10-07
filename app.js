@@ -2,7 +2,8 @@
 
   return {
     events: {
-      'ticket.save': 'onTicketSave'
+      'ticket.save': 'onTicketSave',
+      'comment.text.changed': 'onCommentTextChanged'
     },
 
     onTicketSave: function() {
@@ -14,6 +15,17 @@
         });
       }
     },
+
+    onCommentTextChanged: _.debounce(function(){
+      if (!this.setting('disable_submit'))
+        return;
+
+      if (this.commentIsValid()) {
+        this.enableSave();
+      } else {
+        this.disableSave();
+      }
+    }, 200),
 
     commentIsValid: function() {
       var comment = this.comment().text(),
