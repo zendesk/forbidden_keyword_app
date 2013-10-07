@@ -1,0 +1,22 @@
+{
+  "name": "Forbidden keywords app",
+  "author": {
+    "name": "Services / Pierre Nespo",
+    "email": "services@zendesk.com"
+  },
+
+  "parameters": [
+    {
+      "name": "keywords",
+      "type": "multiline",
+      "required": true
+    }
+  ],
+
+  "defaultLocale": "en",
+  "private": true,
+  "noTemplate": true,
+  "location": [ "new_ticket_sidebar", "ticket_sidebar" ],
+  "version": "1.0",
+  "frameworkVersion": "1.0"
+}
